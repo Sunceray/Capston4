@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style.css">
+<title>House of Goods</title>
+</head>
+<body>
+<h1>House of Goods</h1>
+<table style="width:100%">
+  <tr>
+    <th>Items</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td id="sliverware">Silverware</td>
+    <td id="silverwarePrice">300.00</td> 
+    <td><button id="silverwareButton" onclick="addToCart('Silverware', 300.00);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="art">Art</td>
+    <td id="artPrice">1200.00</td> 
+    <td><button id="artButton" onclick="addToCart('Art', 1200.00);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="games">Games</td>
+    <td id="games">150.00</td> 
+    <td><button id="gamesButton" onclick="addToCart('Games', 150.00);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="bedding">Bedding</td>
+    <td id="beddingPrice">500.00</td> 
+    <td><button id="beddingButton" onclick="addToCart('Bedding', 500.00);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="popcorn">Popcorn</td>
+    <td id="popcornPrice">10.00</td> 
+    <td><button id="popcornButton" onclick="addToCart('Popcorn', 10.00);">Add</button></td>
+  </tr>
+</table>
+<p><button onclick="printCart();">Checkout</button></p>
+<div id="Cart"></div>
+<script src="script.js"></script>
+</body>
